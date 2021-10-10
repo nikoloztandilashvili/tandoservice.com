@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    {% if order is none %}
+        <h3>Order not found</h3>
+    {% else %}
+        <div>
+            <ul>
+                <li><strong>ID</strong>: {{order[0]}}</li>
+                <li><strong>Fullname</strong>: {{order[2]}}</li>
+                <li><string>Email</string>: {{order[3]}}</li>
+                <li><strong>Address</strong>: {{order[4]}}</li>
+
+                <li><a href="{{url_for('delete_order', id=order[0])}}">Delete Order</a></li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>    
+    {% endif %}
+{% endblock %}

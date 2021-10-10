@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    {% for order in orders %}
+        <div>
+            <ul>
+                <li><strong>ID</strong>: {{order[0]}}</li>
+                <li><strong>Fullname</strong>: {{order[2]}}</li>
+                <li><a href="{{url_for('delete_order', id=order[0])}}">Delete Order</a></li>
+            </ul>
+        </div>
+    {% else %}
+        <h3>No orders.</h3>
+    {% endfor %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}
